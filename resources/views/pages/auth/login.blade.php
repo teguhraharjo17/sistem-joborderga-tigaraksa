@@ -1,7 +1,7 @@
 <x-auth-layout>
     @section('title', 'Login Page')
     <!--begin::Form-->
-    <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="/" action="login" method="POST">
+    <form class="form w-100" novalidate="novalidate" id="kt_sign_in_form" data-kt-redirect-url="{{ url('/') }}" action="{{ route('login') }}" method="POST">
         @csrf
 
         <!--begin::Heading-->
